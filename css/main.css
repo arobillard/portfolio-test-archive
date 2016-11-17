@@ -65,8 +65,24 @@ body > header {
 
 /* ----- =Main ----- */
 
+body > main > header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 .toggle-bar {
-  display: none;
+  border-top: 3px solid #903;
+  border-bottom: 3px solid #903;
+  background-color: #fff;
+  overflow: hidden;
+  padding-left: 6.5rem;
+  position: fixed;
+  top: 1rem;
+  left: -110vw;
+  transition: left .25s;
+  width: 100%;
 }
 
 .nav-toggle {
@@ -76,9 +92,18 @@ body > header {
 
 .toggle-icon {
   position: fixed;
-  top: 1rem;
-  left: 1rem;
-  width: 3rem;
+  top: .5rem;
+  left: .5rem;
+  width: 4rem;
+  z-index: 100;
+  border: 8px solid rgba(0, 0, 0, 0);
+  border-radius: 1000px;
+}
+
+.toggle-icon:hover {
+  border: 4px solid rgba(0, 0, 0, 1);
+  transition: border .5s;
+  cursor: pointer;
 }
 
 .nav-toggle:checked ~ .toggle-icon {
@@ -88,46 +113,42 @@ body > header {
   border: 4px solid #000;
   border-radius: 1000px;
   background-color: #fff;
-  z-index: 100;
+}
+
+.nav-toggle:checked ~ .toggle-icon:hover {
+  border: 8px solid rgba(0, 0, 0, 0);
+  transition: border .5s;
 }
 
 .nav-toggle:checked ~ .toggle-bar {
-  display: block;
-  border-top: 3px solid #903;
-  border-bottom: 3px solid #903;
-  background-color: #fff;
-  overflow: hidden;
-  padding-left: 6.5rem;
-  position: fixed;
-  top: 1rem;
-  width: 100%;
+  left: 0;
 }
 
-.nav-toggle:checked ~ .toggle-bar img {
+.toggle-bar img {
   width: 3rem;
   display: inline-block;
   vertical-align: middle;
 }
 
-.nav-toggle:checked ~ .toggle-bar nav {
+.toggle-bar nav {
   display: inline-block;
   text-align: right;
   vertical-align: middle;
   width: 95%;
 }
 
-.nav-toggle:checked ~ .toggle-bar nav ul {
+.toggle-bar nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: inline-block;
 }
 
-.nav-toggle:checked ~ .toggle-bar nav li {
+.toggle-bar nav li {
   display: inline-block;
 }
 
-.nav-toggle:checked ~ .toggle-bar nav a {
+.toggle-bar nav a {
   padding: .5rem 2rem;
   text-decoration: none;
   color: #903;
@@ -136,12 +157,12 @@ body > header {
   vertical-align: middle;
 }
 
-.nav-toggle:checked ~ .toggle-bar nav a:hover {
+.toggle-bar nav a:hover {
   text-decoration: underline;
   opacity: .75;
 }
 
-.nav-toggle:checked ~ .toggle-bar nav a img {
+.toggle-bar nav a img {
   vertical-align: middle;
   width: 1.5rem;
   margin-right: 1rem;
