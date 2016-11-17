@@ -6,7 +6,7 @@
 
 html {
   box-sizing: border-box;
-  font: normal 100%/1.3 "", sans-serif;
+  font: normal 100%/1.3 "Avenir", sans-serif;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -26,7 +26,14 @@ img {
   display: block;
 }
 
-/* ----- +Temp Nav ----- */
+h2 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #903;
+}
+
+/* ----- =Temp Nav ----- */
 
 .temp-nav {
   position: fixed;
@@ -46,6 +53,7 @@ img {
   left: -110vw;
   transition: left .25s;
   width: 100%;
+  box-shadow: 1px 1px 5px #888;
 }
 
 .nav-toggle {
@@ -99,7 +107,7 @@ img {
   display: inline-block;
   text-align: right;
   vertical-align: middle;
-  width: 95%;
+  width: 85%;
 }
 
 .toggle-bar nav ul {
@@ -140,6 +148,7 @@ body > header {
   padding: 0 0 0 4rem;
   z-index: 1000;
   position: relative;
+  box-shadow: 1px 1px 5px #888;
 }
 
 .masthead {
@@ -170,8 +179,137 @@ body > header {
 
 /* ----- =Main ----- */
 
+.box-style {
+  border-bottom: 3px solid #903;
+  box-shadow: 1px 1px 5px #888;
+  overflow: hidden;
+}
 
+.box-size {
+  max-width: 75rem;
+  margin: 0 auto;
+}
 
-body > main {
-  /*margin-top: 116px;*/
+.wel-mess {
+  padding: 12rem 20rem;
+}
+
+.wel-mess h2 {
+  text-align: center;
+  color: #222;
+}
+
+.work-prev {
+  padding: 4rem;
+  /*background-color: #eee;*/
+  text-align: center;
+}
+
+.work-prev div {
+  display: inline-block;
+  width: 45%;
+  /*padding: 4rem;*/
+  vertical-align: middle;
+}
+
+.work-prev img {
+  max-width: 18rem;
+  display: inline-block;
+}
+
+.work-prev p {
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+
+.work-blocks a {
+  float: left;
+  width: 25%;
+  padding: 4rem 2rem;
+  color: #fff;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.work-blocks a:hover {
+  background-color: #f2f2f2;
+  transition: background-color 1s;
+}
+
+.work-blocks figure {
+  margin: 0;
+  box-shadow: 1px 1px 5px #888;
+}
+
+.work-blocks figcaption {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+  background-color: #903;
+}
+
+.brief-bio {
+  padding: 0 4rem;
+  text-align: center;
+}
+
+.brief-bio-block {
+  padding: 2rem;
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+}
+
+.brief-bio-block img {
+  box-shadow: 1px 1px 5px #888;
+}
+
+.brief-bio-description {
+  width: 60%;
+}
+
+.brief-bio-description div {
+  column-count: 2;
+  text-align: left;
+}
+
+.brief-bio-description p {
+  margin: 0;
+}
+
+/* ----- =Footer ----- */
+
+body > footer {
+  background-color: #000;
+  border-top: 2rem solid #222;
+  padding: 2rem;
+  text-align: center;
+}
+
+body > footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+body > footer li {
+  display: inline-block;
+}
+
+body > footer a {
+  opacity: .25;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 4rem;
+}
+
+body > footer img {
+  width: 3rem;
+  display: inline-block;
+}
+
+.nav-legal a {
+  padding: 1rem 2rem;
 }
