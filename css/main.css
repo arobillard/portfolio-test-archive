@@ -35,7 +35,14 @@ h2 {
 /* ----- =Menu Small ----- */
 
 .nav-menu {
-  display: none;
+  width: 66.666%;
+  height: calc(100vh - 3rem);
+  position: fixed;
+  left: -100vh;
+  top: 3rem;
+  background-color: #903;
+  transition: left .5s;
+  z-index: 1000;
 }
 
 .nav-check {
@@ -131,7 +138,7 @@ h2 {
 }
 
 .nav-check:checked ~ .nav-menu {
-  display: block;
+  left: 0;
 }
 
 /* ----- =Header ---- */
