@@ -75,6 +75,10 @@ h2 {
   margin: 0;
 }
 
+.nav-label img:last-child {
+  display: none;
+}
+
 .nav-menu {
   width: 66.666%;
   height: calc(100vh - 3rem);
@@ -163,6 +167,14 @@ h2 {
 
 .nav-check:checked ~ .nav-menu {
   left: 0;
+}
+
+.nav-check:checked ~ .nav-label img:first-child {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label img:last-child {
+  display: inline-block;;
 }
 
 /* ----- =Header ---- */
