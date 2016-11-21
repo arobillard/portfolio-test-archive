@@ -6,7 +6,7 @@
 
 html {
   box-sizing: border-box;
-  font: normal 100%/1.3 "", sans-serif;
+  font: normal 100%/1.3 "Avenir", sans-serif;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -26,13 +26,38 @@ img {
   display: block;
 }
 
+h1,
 h2 {
-  font-weight: 100;
-  text-align: center;
   margin: 0;
 }
 
-/* ----- =Menu Small ----- */
+h2 {
+  font-weight: 100;
+  text-align: center;
+  width: 100%;
+}
+
+.icon {
+  width: 2rem;
+  vertical-align: middle;
+  margin: 0 1rem 0 0;
+}
+
+.nul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nul li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+}
+
+/* ----- =Menu ----- */
 
 .nav-check {
   position: absolute;
@@ -40,16 +65,12 @@ h2 {
 }
 
 .temp-nav {
-  background-color: #903;
+  background-color: #036;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
   border-bottom: 2px solid #222;
-}
-
-.temp-nav h1 {
-  margin: 0;
 }
 
 .temp-nav h1 img {
@@ -58,6 +79,10 @@ h2 {
   position: absolute;
   right: 1rem;
   top: .5rem;
+}
+
+.temp-nav h1 img:hover {
+  opacity: .85;
 }
 
 .nav-label {
@@ -92,18 +117,18 @@ h2 {
   z-index: 999;
 }
 
-.nav-menu ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
 .nav-menu li {
   padding: .5rem 0;
+  display: block;
+}
+
+.nav-menu li:last-child {
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #036;
 }
 
 .nav-menu a {
-  color: #903;
+  color: #036;
   text-decoration: none;
 }
 
@@ -113,13 +138,8 @@ h2 {
   text-align: left;
 }
 
-.nav-menu li:last-child {
-  padding-bottom: .5rem;
-  border-bottom: 1px solid #903;
-}
-
 .nav-menu li a:hover {
-  background-color: #903;
+  background-color: #036;
   color: #fff;
 }
 
@@ -127,14 +147,7 @@ h2 {
   display: inline-block;
 }
 
-.icon {
-  width: 2rem;
-  vertical-align: middle;
-  margin: 0 1rem 0 0;
-}
-
 .icon-hov {
-  width: 2rem;
   vertical-align: middle;
   margin: 0 1rem 0 0;
   display: none;
@@ -191,7 +204,7 @@ body > main {
 }
 
 .box-style {
-  border-bottom: 3px solid #903;
+  border-bottom: 3px solid #036;
   box-shadow: 1px 1px 5px #888;
   overflow: hidden;
 }
@@ -200,6 +213,7 @@ body > main {
   min-height: 50vh;
   background-color: #222;
   position: relative;
+  z-index: -1;
 }
 
 .wel-mess h2 {
@@ -231,7 +245,6 @@ body > main {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-
 }
 
 .work-prev p {
@@ -267,8 +280,7 @@ body > main {
 
 .work-blocks figcaption {
   padding: 1rem;
-  background-color: #903
-
+  background-color: #036
 }
 
 .brief-bio {
@@ -302,198 +314,29 @@ body > footer li {
 }
 
 body > footer a {
-  color: #fff;
+  color: #404040;
   font-size: .875rem;
   text-decoration: none;
   padding: .5rem .5rem;
-  opacity: .25;
   display: block;
 }
 
+body > footer a img:last-child {
+  display: none;
+}
+
 body > footer a:hover {
-  opacity: .5;
+  color: #036;
 }
 
-@media only screen and (min-width: 25em) {
-
-  html {
-   font-size: 100%;
-   line-height: 1.3;
- }
-
+body > footer a:hover img:first-child {
+  display: none;
 }
 
-@media only screen and (min-width: 40em) {
+body > footer a:hover img:last-child {
+  display: block;
+}
 
-  html {
-    font-size: 110%;
-    line-height: 1.4;
-  }
-
-  /* ----- +Temp-Nav ----- */
-
-  .temp-nav {
-    background-color: rgba(0,0,0,0);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: auto;
-    border-bottom: none;
-  }
-
-  .temp-nav h1 {
-    display: none;
-  }
-
-  .nav-label {
-    padding: 0;
-    position: fixed;
-    top: .5rem;
-    left: .5rem;
-    width: 4rem;
-    z-index: 100;
-    border: 8px solid rgba(0, 0, 0, 0);
-    border-radius: 1000px;
-    z-index: 1000;
-  }
-
-  .nav-label:hover {
-    border: 4px solid rgba(0, 0, 0, 1);
-    transition: border .5s;
-    cursor: pointer;
-    background-color: #fff;
-  }
-
-  .nav-label .icon {
-    display: inline-block;
-    margin: 0;
-    width: 100%;
-  }
-
-  .nav-menu {
-    border-top: 3px solid #903;
-    border-bottom: 3px solid #903;
-    border-right: none;
-    /*background-color: #fff;*/
-    padding-left: 6.5rem;
-    position: fixed;
-    top: 1rem;
-    left: -110vw;
-    transition: left .25s;
-    width: 100%;
-    height: auto;
-    box-shadow: 1px 1px 5px #888;
-    overflow: hidden;
-  }
-
-  .nav-menu ul {
-    text-align: right;
-  }
-
-  .nav-menu li {
-    display: inline-block;
-  }
-
-  .nav-menu li {
-    padding: 0;
-  }
-
-  .nav-menu li:last-child {
-    padding-bottom: 0;
-    border-bottom: none;
-  }
-
-  .nav-menu small {
-    display: none;
-  }
-
-  .nav-menu li a:hover {
-    background-color: #fff;
-    color: #903;
-    text-decoration: underline;
-    opacity: .75;
-  }
-
-  .nav-menu a:hover .icon {
-    display: inline-block;;
-  }
-
-  .nav-menu a:hover .icon-hov {
-    display: none;
-  }
-
-  .tb-logo {
-    float: left;
-    width: auto;
-    height: 1.5rem;
-    margin: .5rem 0;
-    display: inline-block;
-  }
-
-  .nav-check:checked ~ .nav-label {
-    top: .5rem;
-    left: .5rem;
-    width: 4rem;
-    border: 4px solid #000;
-    border-radius: 1000px;
-    background-color: #fff;
-  }
-
-  .nav-check:checked ~ .nav-label:hover {
-    border: 0.1px solid rgba(0, 0, 0, 0);
-    transition: border .5s;
-    background-color: inherit;
-  }
-
-  /* ----- +Header ----- */
-
-  body > header {
-    background-color: #903;
-    padding: 0 0 0 4rem;
-    z-index: 1000;
-    position: relative;
-    /*box-shadow: 1px 1px 5px #888;*/
-    display: block;
-  }
-
-  .masthead {
-    background-color: #fff;
-    border-left: 15px solid #222;
-    /*border-bottom: 5px solid #222;*/
-    padding: 2rem;
-    position: relative;
-  }
-
-  .masthead h1 {
-    width: 6rem;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
-  }
-
-  .nav-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  .nav-img img {
-    width: auto;
-    height: 111px;
-  }
-
-  /* ----- +Main ----- */
-
-  body > main {
-    margin-top: 0;
-  }
-
-  .wel-mess {
-    padding: 10rem 2rem;;
-  }
-
-  .wel-mess h2 {
-
-  }
+body > footer .nav-soc {
+  padding: .5rem 0 0;
 }
