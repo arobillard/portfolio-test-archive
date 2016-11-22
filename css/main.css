@@ -124,6 +124,10 @@ li a {
   padding: 0;
 }
 
+.nav-menu .tb-nav-content li:last-child {
+  padding: 0 0 1rem;;
+}
+
 .nav-menu li {
   padding: .5rem 0;
   display: block;
