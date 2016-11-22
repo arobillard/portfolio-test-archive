@@ -40,7 +40,6 @@ h2 {
 .icon {
   width: 2rem;
   vertical-align: middle;
-  margin: 0 1rem 0 0;
 }
 
 .nul {
@@ -145,6 +144,11 @@ li a {
 
 .nav-menu a .icon {
   display: inline-block;
+}
+
+
+.nav-menu .icon {
+  margin: 0 1rem 0 0;
 }
 
 .icon-hov {
@@ -288,7 +292,7 @@ body > main {
 }
 
 .brief-bio h2 {
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 /* ----- =Footer ----- */
@@ -300,17 +304,21 @@ body > footer {
 
 body > footer ul {
   margin: 0;
-  padding: .5rem 0 0;
-  list-style-type: none;
   text-align: center;
+  overflow: hidden;
+}
+
+.nav-soc {
+  padding: .5rem 1.5rem 0;
 }
 
 body > footer ul:last-child {
-  padding: 0 0 .5rem;
+  padding: .5rem 3rem 1rem;
 }
 
 body > footer li {
-  display: inline-block;
+  float: left;
+  width: 33.3333%;
 }
 
 body > footer a {
@@ -319,6 +327,14 @@ body > footer a {
   text-decoration: none;
   padding: .5rem .5rem;
   display: block;
+}
+
+body > footer ul:last-child a {
+  padding: 0 .5rem;
+}
+
+body > footer a img {
+  display: inline-block;
 }
 
 body > footer a img:last-child {
@@ -334,9 +350,14 @@ body > footer a:hover img:first-child {
 }
 
 body > footer a:hover img:last-child {
-  display: block;
+  display: inline-block;;
 }
 
-body > footer .nav-soc {
-  padding: .5rem 0 0;
+.nav-soc a {
+  padding: .5rem 1rem;
+}
+
+.nav-legal li:nth-child(2) {
+  border-left: 1px solid #404040;
+  border-right: 1px solid #404040;
 }
