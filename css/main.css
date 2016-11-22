@@ -511,3 +511,71 @@ body > footer a:hover img:last-child {
   .nav-menu .tb-nav-prim {
     margin: 0;
   }
+
+  /* ----- +Header ----- */
+
+  body > header {
+    background-color: #036;
+    padding: 0 2rem 0 4rem;
+    z-index: 1000;
+    position: relative;
+    /*box-shadow: 1px 1px 5px #888;*/
+    display: block;
+  }
+
+  .masthead {
+    background-color: #fff;
+    border-left: 15px solid #222;
+    border-right: 15px solid #222;
+    padding: 2rem;
+    position: relative;
+  }
+
+  .masthead h1 {
+    width: 6rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+  }
+
+  .ban-imgs {
+    position:
+  }
+
+  .ban-imgs-con {
+    width: 4rem;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .ban-imgs-con:hover {
+    width: auto;
+    transition: width: 1s;
+  }
+
+  .ban-imgs-con img {
+    display: inline-block;
+    height: 122.38px;
+    width: auto;
+  }
+  /*.nav-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .nav-img img {
+    width: auto;
+    height: 122.38px;
+  }*/
+  /* ----- +Main ----- */
+
+  body > main {
+    margin-top: 0;
+  }
+
+  .wel-mess h2 {
+    padding: 0 8rem;
+  }
+}
