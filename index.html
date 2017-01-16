@@ -2,127 +2,186 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Adam Robillard</title>
+  <title>Adam William Robillard</title>
   <meta name="handheldfriendly" content="true">
   <meta name="mobileoptimized" content="240">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700" rel="stylesheet">
 </head>
 <body>
-  <div class="temp-nav">
+  <header class="masthead">
     <h1>
-      <a href="../portfolio/"><img src="images/awr-logo-white.svg" alt="AWR Logo"></a>
+      <a class="logo" href="../portfolio/">
+        <img class="img-flex" src="images/awr-logo-white.svg" alt="">
+      </a>
     </h1>
-    <input type="checkbox" class="nav-check" id="nav-check">
-    <label class="nav-label" for="nav-check"><img class="icon" src="images/toggle-blue.svg" alt=""><img class="icon" src="images/toggle-x-blue.svg" alt=""></label>
-    <div class="nav-menu">
-      <img class="tb-logo" src="images/awr-logo.svg" alt="AWR Logo">
-      <div class="tb-nav-prim">
-        <ul class="nul">
-          <li><a href="#"><img class="icon icon-nav" src="images/portfolio.svg" alt=""><img class="icon-hov icon-nav" src="images/portfolio-white.svg" alt="">portfolio</a></li>
-          <li><a href="#"><img class="icon icon-nav" src="images/bio.svg" alt=""><img class="icon-hov icon-nav" src="images/bio-white.svg" alt="">bio</a></li>
-          <li><a href="#"><img class="icon icon-nav" src="images/contact.svg" alt=""><img class="icon-hov icon-nav" src="images/contact-white.svg" alt="">contact</a></li>
-        </ul>
-      </div>
-      <div class="tb-nav-content">
-        <ul class="nul">
-          <li><a href="#work-prev">Art Preview</a></li>
-          <li><a href="#work-blocks">Portfolio Categories</a></li>
-          <li><a href="#brief-bio">Brief Bio</a></li>
-        </ul>
-      </div>
-      <small><a href="#top">back to top</a></small>
-    </div>
-  </div>
-  <header>
-    <div class="masthead">
-      <h1>
-        <img src="images/awr-logo.svg" alt="AWR Logo">
-      </h1>
-      <ul class="nul nav-head">
-        <li><a href="#"><img class="icon icon-nav" src="images/portfolio.svg" alt=""><img class="icon-hov icon-nav" src="images/portfolio-white.svg" alt="">portfolio</a></li>
-        <li><a href="#"><img class="icon icon-nav" src="images/bio.svg" alt=""><img class="icon-hov icon-nav" src="images/bio-white.svg" alt="">bio</a></li>
-        <li><a href="#"><img class="icon icon-nav" src="images/contact.svg" alt=""><img class="icon-hov icon-nav" src="images/contact-white.svg" alt="">contact</a></li>
+    <input type="checkbox" class="s-nav" id="s-nav">
+    <label class="s-nav-label" for="s-nav">
+      <img class="icon t-open" src="images/toggle.svg" alt="">
+      <img class="icon t-close" src="images/toggle-x.svg" alt="">
+    </label>
+    <label class="s-nav-close" for="s-nav"></label>
+    <nav class="slide-in">
+      <ul  class="mainbar">
+        <li>
+          <a href="#">
+            <!-- <img class="icon icon-nav" src="images/portfolio.svg" alt=""> -->
+            <img class="icon" src="images/portfolio-white.svg" alt="">
+            <p>portfolio</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!-- <img class="icon icon-nav" src="images/bio.svg" alt=""> -->
+            <img class="icon" src="images/bio-white.svg" alt="">
+            <p>bio</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!-- <img class="icon icon-nav" src="images/contact.svg" alt=""> -->
+            <img class="icon" src="images/contact-white.svg" alt="">
+            <p>contact</p>
+          </a>
+        </li>
       </ul>
-    </div>
+    </nav>
   </header>
   <main>
-    <div class="wel-mess  box-size">
-      <!-- <img src="images/laptop.jpg" alt=""> -->
+    <header>
       <h2>Left brain design, with logic in mind.</h2>
-      <ul class="nul">
-        <li><a href="#"><img src="images/awr-logo-white.svg" alt-""></a></li>
-        <li><a href="#">portfolio</a></li>
-        <li><a href="#">bio</a></li>
-        <li><a href="#">contact</a></li>
-      </ul>
-    </div>
-    <div id="work-prev" class="box-style">
-      <div class="work-prev box-size">
-        <div>
-          <img src="images/cujo.svg" alt="Cujo">
-        </div>
-        <div>
-          <h2>Cujo, not just a lap dog.</h2>
-          <p>Symbol design based on the Stephen King novel.</p>
-        </div>
-      </div>
-    </div>
-    <div id="work-blocks" class="box-style">
-      <div class="work-blocks box-size">
-        <h2>See samples of my work.</h2>
-        <a href="#">
-          <figure>
-            <img src="images/cujo-sq.svg" alt="Cujo">
-            <figcaption>Graphics</figcaption>
-          </figure>
-        </a>
-        <a href="#">
-          <figure>
-            <img src="images/preview.svg" alt="Mobile Layout">
-            <figcaption>Web Layout</figcaption>
-          </figure>
-        </a>
-        <a href="#">
-          <figure>
-            <img src="images/tc-steve.jpg" alt="Team Canada">
-            <figcaption>Jerseys</figcaption>
-          </figure>
-        </a>
-        <a href="#">
-          <figure>
-            <img src="images/type.svg" alt="Type">
-            <figcaption>Typography</figcaption>
-          </figure>
-        </a>
-      </div>
-    </div>
-    <div id="brief-bio" class="box-style">
-      <div class="brief-bio box-size">
-        <div class="brief-bio-block brief-bio-img">
-          <img src="images/headshot.jpeg" alt="Headshot">
-        </div>
-        <div class="brief-bio-block brief-bio-description">
-          <h2>Adam William Robillard</h2>
+    </header>
+    <div class="work-prev">
+      <div class="grid">
+        <div class="unit xs-1">
           <div>
-            <p>Adam is currently in his second year of studying design and art. After graduating from Design Studies at Algonquin College last spring on the Dean's List, he continued into Graphic Design this fall. He is learning a variety of different styles of design but is focusing on graphics and web design currently.</p>
-            <p>Adam’s design roots come from designing jerseys and merchandise for amateur sports teams such as local basketball and quidditch teams. After finishing his studies, he aims to work with sports companies and teams where he would design their websites, marketing materials, and merchandise. His dream would be to one day design an NHL hockey jersey.</p>
+            <img class="img-flex" src="images/cujo.svg" alt="Cujo graphic">
+          </div>
+          <div>
+            <h2>Cujo, not just a lap dog.</h2>
+            <p>Symbol design based on the Stephen King novel.</p>
+            <a class="work-prev-btn" href="#">See full project</a>
+          </div>
+        </div>
+        <div class="unit unit-xs-hidden m-1-2">
+          <div>
+            <img class="img-flex" src="https://placehold.it/400x500" alt="Placeholder">
+          </div>
+          <div>
+            <h2>Lorem ipsum project.</h2>
+            <p>A placeholder project all about lorem ipsum.</p>
+            <a class="work-prev-btn" href="#">See full project</a>
+          </div>
+        </div>
+        <div class="unit unit-xs-hidden m-1-2">
+          <div>
+            <img class="img-flex" src="https://placehold.it/400x500" alt="Placeholder">
+          </div>
+          <div>
+            <h2>Lorem ipsum project.</h2>
+            <p>A placeholder project all about lorem ipsum.</p>
+            <a class="work-prev-btn" href="#">See full project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="port-cat">
+      <div class="grid">
+        <div class="unit xs-1-2 s-1-2 m-1-4">
+          <a href="#">
+            <figure>
+              <img class="img-flex" src="https://placehold.it/300x300" alt="Cujo">
+              <figcaption>Logo Design</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="unit xs-1-2 s-1-2 m-1-4">
+          <a href="#">
+            <figure>
+              <img class="img-flex" src="https://placehold.it/300x300" alt="Cujo">
+              <figcaption>User Interaction</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="unit xs-1-2 s-1-2 m-1-4">
+          <a href="#">
+            <figure>
+              <img class="img-flex" src="https://placehold.it/300x300" alt="Cujo">
+              <figcaption>Jersey Design</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="unit xs-1-2 s-1-2 m-1-4">
+          <a href="#">
+            <figure>
+              <img class="img-flex" src="https://placehold.it/300x300" alt="Cujo">
+              <figcaption>Typogaphy</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="brief-bio">
+      <div class="grid">
+        <div class="unit">
+          <img class="img-flex" src="images/adamheadshot.jpg" alt="Adam Robillard headshot">
+        </div>
+        <div class="unit">
+          <h2>Adam William Robillard</h2>
+          <div class="grid">
+            <div class="unit">
+              <h3>Bio</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="unit">
+              <h3>Contact Information</h3>
+              <p>Tel: <a href="tel:1-613-314-4551">(613) 314-4551</a></p>
+              <p>Email: <a href="mailto:robi0653@algonquinlive.com">robi0653@algonquinlive.com</a></p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </main>
   <footer>
-    <ul class="nav-soc nul">
-      <li><a href="https://www.facebook.com/arobillard" target="_blank"><img class="icon" src="images/facebook.svg" alt=""><img class="icon" src="images/facebook-blue.svg" alt=""></a></li>
-      <li><a href="https://twitter.com/awillrobillard" target="_blank"><img class="icon" src="images/twitter.svg" alt=""><img class="icon" src="images/twitter-blue.svg" alt=""></a></li>
-      <li><a href="https://www.instagram.com/awillrobillard/" target="_blank"><img class="icon" src="images/instagram.svg" alt=""><img class="icon" src="images/instagram-blue.svg" alt=""></a></li>
-      <li><a href="https://www.linkedin.com/in/adam-robillard-93b6076b" target="_blank"><img class="icon" src="images/linkedin.svg" alt=""><img class="icon" src="images/linkedin-blue.svg" alt=""></a></li>
+    <ul class="grid">
+      <li class="unit">
+        <a href="https://www.facebook.com/arobillard" target="_blank">
+          <img class="icon" src="images/facebook.svg" alt="">
+          <img class="icon" src="images/facebook-blue.svg" alt="">
+        </a>
+      </li>
+      <li class="unit">
+        <a href="https://twitter.com/awillrobillard" target="_blank">
+          <img class="icon" src="images/twitter.svg" alt="">
+          <img class="icon" src="images/twitter-blue.svg" alt="">
+        </a>
+      </li>
+      <li class="unit">
+        <a href="https://www.instagram.com/awillrobillard/" target="_blank">
+          <img class="icon" src="images/instagram.svg" alt="">
+          <img class="icon" src="images/instagram-blue.svg" alt="">
+        </a>
+      </li>
+      <li class="unit">
+        <a href="https://www.linkedin.com/in/adam-robillard-93b6076b" target="_blank">
+          <img class="icon" src="images/linkedin.svg" alt="">
+          <img class="icon" src="images/linkedin-blue.svg" alt="">
+        </a>
+      </li>
     </ul>
-    <ul class="nav-legal nul">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Site Map</a></li>
-      <li><a href="#">Legal</a></li>
+    <ul class="grid">
+      <li class="unit">
+        <a href="#">Home</a>
+      </li>
+      <li class="unit">
+        <a href="#">Site Map</a>
+      </li>
+      <li class="unit">
+        <a href="#">Legal</a>
+      </li>
     </ul>
   </footer>
 </body>
