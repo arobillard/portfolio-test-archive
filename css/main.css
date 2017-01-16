@@ -37,6 +37,13 @@ h1 {
   vertical-align: middle;
 }
 
+.img-vh-s {
+  height: 100vh;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* ----- =Header -----*/
 
 .masthead {
@@ -47,6 +54,7 @@ h1 {
   left: 0;
   width: 100%;
   box-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+  z-index: 100000000;
 }
 
 .logo {
@@ -134,7 +142,7 @@ h1 {
 .s-nav-close {
   width: 100vw;
   height: 100vh;
-  z-index: -1;
+  z-index: 500;
   background-color: #000;
   opacity: 0;
   position: fixed;
@@ -158,4 +166,31 @@ h1 {
 .s-nav:checked ~ .s-nav-close {
   opacity: .5;
   left: 0;
+}
+
+/* ----- =Main ----- */
+
+main {
+  margin: 4rem 0 0;
+}
+
+main header {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+main header h2 {
+  color: #000;
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 1.5rem 2.5rem;
+  /*background-color: rgba(255, 255, 255, .5);*/
+  text-align: center;
+  font-weight: lighter;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .25);
+  z-index: 300;
 }
