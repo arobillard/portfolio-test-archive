@@ -51,10 +51,29 @@ h1 {
 
 .logo {
   display: inline-block;
-  width: 2rem;
+  width: 2.5rem;
   position: absolute;
   top: 1.5rem;
   right: 1rem;
+}
+
+.logo img:last-child {
+  display: none;
+  vertical-align: top
+}
+
+.logo img:first-child:hover {
+  opacity: .75;
+}
+
+.logo:active img:first-child {
+  display: none;
+}
+
+.logo:active img:last-child {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 .s-nav {
