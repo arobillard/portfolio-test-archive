@@ -102,6 +102,10 @@ h1 {
   background-color: #444;
 }
 
+.slide-in a:active {
+  background-color: #666;
+}
+
 .slide-in p {
   margin: 0;
   display: inline-block;
@@ -111,7 +115,7 @@ h1 {
 .s-nav-close {
   width: 100vw;
   height: 100vh;
-  z-index: 100;
+  z-index: -1;
   background-color: #000;
   opacity: 0;
   position: fixed;
